@@ -2255,7 +2255,6 @@ public abstract class OAbstractPaginatedStorage extends OStorageAbstract impleme
         final ORecordId oldRID;
         if (rid.isNew()) {
           oldRID = rid.copy();
-          rid.clusterId = clusterId;
         } else
           oldRID = rid;
 
